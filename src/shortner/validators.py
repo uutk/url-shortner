@@ -22,3 +22,10 @@ def validate_url(value):
 		raise ValidationError("Invalid URL")
 	
 	return value
+
+def validate_dot_com(value):
+	if not ".com" in value or not ".in" in value:
+		raise ValidationError("Invalid URL")
+	return value	
+
+
