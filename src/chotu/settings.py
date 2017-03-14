@@ -25,7 +25,7 @@ SECRET_KEY = 'n(*nytr#14!9&o_cnls(gi)bq^u_7bo1@8*6j!fo88r21fg6m2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.kiddo.co', 'kiddo.co', '127.0.0.1']
 
 
 # Application definition

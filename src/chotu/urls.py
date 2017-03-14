@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from shortner.views import ChotuRedirectView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^view/(?P<shortcode>[\w-]+)/$', ChotuRedirectView.as_view()),
 ]
