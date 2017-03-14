@@ -3,4 +3,4 @@
 A django based url-shortner
 
 
-PS :src complete, hostinnh part left.
+PS : src-code complete, hosting part left.
