@@ -10,8 +10,10 @@ def validate_url(value):
 		url_validator(value)
 	except:
 		value_0_invalid = True
-
-	value_1 = "https://" + value
+	if value_0_invalid:
+		value_1 = "https://" + value
+	else :
+		return value	
 
 	try :
 		url_validator(value_1)
@@ -20,11 +22,10 @@ def validate_url(value):
 
 	if value_0_invalid and value_1_invalid:
 		raise ValidationError("Invalid URL")
-	
-	return value
+	return value_1
 
 def validate_dot_com(value):
-	if not ".com" in value or not ".in" in value:
+	if not ".com" in value:
 		raise ValidationError("Invalid URL")
 	return value	
 

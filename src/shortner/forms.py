@@ -13,9 +13,9 @@ class SubmitURL(forms.Form):
 				)
 			)
 
-	def clean_url(self):
-		url = self.cleaned_data['url']
-		if "https://" in url  or "http://" in url:
-			return url
-		else:
-			return "https://" + url	
+	"""def clean_url(self):
+					url = self.cleaned_data['url']
+					if "https://" in url  or "http://" in url:
+						return url
+					else:
+						return "https://" + url	"""
